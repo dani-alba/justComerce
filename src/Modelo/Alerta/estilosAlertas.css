@@ -1,0 +1,21 @@
+/* ----------- ESTILO ALERTAS -----'''''CAMBIAR 3 POR CADA MODIFICACIÓN'''''---------*/
+.dialog-pane {
+    -fx-background-color: linear-gradient(rgba(0,0,0,0.4) 0%, rgba(153, 153, 153,0.4) 100%);
+}
+
+.dialog-pane .label {
+    -fx-text-fill: white;
+}
+
+.dialog-pane:header .header-panel {
+    -fx-background-color: linear-gradient(rgba(0,0,0,0.4) 0%, rgba(153, 153, 153,0.4) 150%);
+}
+
+.dialog-pane:header .header-panel .label {
+    -fx-font-style: italic;
+    -fx-font-size: 2em;
+}
+
+.myDialog > *.button-bar > *.container{
+    -fx-background-color: black;
+}

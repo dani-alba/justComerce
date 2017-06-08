@@ -1,0 +1,178 @@
+#ac_Empleado{
+    -fx-background-image: url(../Empleado/Images/fondo.jpg);
+    -fx-background-size: cover;
+}
+
+#pn_FondoEmpleado{
+    -fx-background-color: linear-gradient(rgba(105,105,105,0.4) 0%, rgba(0,0,0,0.4) 100%);
+}
+
+#pn_CabeceraEmpleado{
+    -fx-background-image: url(../Empleado/Images/cabecera.png);
+}
+
+#bt_Inicio{
+    -fx-background-image: url(../Empleado/Images/inicio2.png);
+    -fx-background-size: cover;
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+    
+}
+
+#bt_Perfil, #bt_Ayuda{
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;    
+}
+
+#bt_Perfil:hover, #bt_Ayuda:hover, #bt_LogOut:hover, #bt_Inicio:hover {
+    -fx-background-color: rgba(0, 0,0, 0.3);
+}
+
+#bt_Perfil:pressed, #bt_Ayuda:pressed, #bt_LogOut:pressed, #bt_Inicio:pressed {
+    -fx-border-color: orange;
+}
+
+#bt_LogOut{
+    -fx-background-image: url(../Empleado/Images/logOut.png);
+    -fx-background-size: cover;
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;    
+}
+
+#bt_productos, #bt_ventas, #bt_anadirProducto, #bt_regVenta, #bt_anadirIncidencia{
+    -fx-background-insets:0;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.5) , 0, 0 , 5, 5);
+    -fx-background-size: cover;
+}
+
+#bt_productos{
+    -fx-background-image: url(../Empleado/Images/productos.jpg);    
+}
+
+#bt_ventas{
+    -fx-background-image: url(../Empleado/Images/ventas.jpg);    
+}
+
+#bt_anadirProducto{
+    -fx-background-image: url(../Empleado/Images/insertarVenta.jpg);   
+}
+
+#bt_regVenta{
+    -fx-background-image: url(../Empleado/Images/facturaNueva.jpg);   
+}
+
+#bt_anadirIncidencia{
+    -fx-background-image: url(../Empleado/Images/incidenciasMas.jpg);   
+}
+
+#bt_productos:pressed, #bt_ventas:pressed, #bt_anadirProducto:pressed, #bt_regVenta:pressed,
+#bt_anadirIncidencia:pressed{
+   -fx-translate-x: 5;
+   -fx-translate-y: 5;
+   -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.5) , 0, 0 , 0, 0);
+}
+
+#bt_productos:hover, #bt_ventas:hover, #bt_anadirProducto:hover, #bt_regVenta:hover,
+#bt_anadirIncidencia:hover{
+   -fx-border-color: orange;
+}
+
+#lb_idVenta{
+    -fx-background-color: #cccccc;
+    -fx-text-fill: #eba037;
+    -fx-border-radius: 2px;
+}
+
+/* -------------- TableView --------------- */
+
+.root{
+    -fx-background-color: #262626;
+}
+
+.table-view{
+   -fx-background-color: transparent;
+}
+
+.table-view:focused{
+    -fx-background-color: transparent;
+}
+
+/* Spaltenköpfe
+    Struktur column-header-background -> column-header */
+
+.table-view .column-header-background{
+    -fx-background-color: linear-gradient(#131313 0%, #424141 100%);
+}
+
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+.table-view .table-cell{
+    -fx-text-fill: white;
+}
+
+.table-row-cell{
+    -fx-background-color: -fx-table-cell-border-color, #616161;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */
+}
+
+.table-row-cell:odd{
+    -fx-background-color: -fx-table-cell-border-color, #424242;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */  
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #005797;
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+}
+
+.table-view > .virtual-flow > .scroll-bar:vertical,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track-background, 
+.table-view > .virtual-flow > .scroll-bar:horizontal,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track-background {
+    -fx-background-color: transparent;
+}
+
+.table-view > .virtual-flow > .scroll-bar > .increment-button, 
+.table-view > .virtual-flow > .scroll-bar > .decrement-button {
+    -fx-opacity: 0;
+}
+
+/* -------------- ListView --------------- */
+
+/* ESTILO ListView */
+#lv_detalleVentas .list-cell{
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+}
+
+#lv_detalleVentas .list-cell:even {
+    -fx-background-color:  #616161;
+}
+
+#lv_detalleVentas .list-cell:odd{
+    -fx-background-color: #424242;
+}
+
+.text-area {
+    -fx-font-family: Open Sans;
+    -fx-font-size: 15;
+    -fx-text-fill: white;
+    -fx-display-caret:true;
+}
+
+.text-area .content {
+    -fx-background-color: #1a1a1a;
+}

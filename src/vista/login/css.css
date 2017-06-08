@@ -1,0 +1,73 @@
+/* ------------------PANTALLA LOGIN------------------ */
+
+#pantallaLogin{
+    -fx-background-image: url(../login/images/fondoLogin2.jpg);
+}
+
+#paneLogin, #pn_Bienvenida{
+    -fx-background-radius: 15px;
+    -fx-background-color: rgba(89, 89, 89, 0.3);
+}
+
+/* BOTONES INCIAR SESION */
+
+#btIniciarSesion{
+    -fx-background-color: rgb(26, 26, 26);
+}
+
+#btIniciarSesion:hover{
+    -fx-background-color: rgb(46, 46, 46);
+}
+
+#btIniciarSesion:pressed{
+    -fx-background-color: rgb(46, 46, 46);
+    -fx-effect: dropshadow(three-pass-box, #e29406, 10, 0, 0, 0);
+}
+
+#barraLogin{
+    -fx-background-color: white;
+}
+
+#paneTransicion{
+    -fx-background-image: url(../login/images/logo.png);
+}
+
+#paneFondo{
+    -fx-background-image: url(../login/images/transicion3.jpg);
+}
+
+#acord_principal{
+    -fx-background-image: url(../login/images/transicion.jpg);
+}
+
+#pn_izquierda{
+    -fx-background-color: rgba(89, 89, 89, 0.3);
+}
+
+#textos{
+    -fx-border-color: #e29406;
+    -fx-border-radius: 2px;
+    -fx-border-width: 1.5px;
+}
+
+/* ----------- ESTILO ALERTAS -----'''''CAMBIAR 3 POR CADA MODIFICACIÓN'''''---------*/
+.dialog-pane {
+    -fx-background-color: linear-gradient(rgba(0,0,0,0.4) 0%, rgba(153, 153, 153,0.4) 100%);
+}
+
+.dialog-pane .label {
+    -fx-text-fill: white;
+}
+
+.dialog-pane:header .header-panel {
+    -fx-background-color: linear-gradient(rgba(0,0,0,0.4) 0%, rgba(153, 153, 153,0.4) 150%);
+}
+
+.dialog-pane:header .header-panel .label {
+    -fx-font-style: italic;
+    -fx-font-size: 2em;
+}
+
+.myDialog > *.button-bar > *.container{
+    -fx-background-color: black;
+}

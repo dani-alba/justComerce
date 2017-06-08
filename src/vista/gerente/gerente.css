@@ -1,0 +1,240 @@
+#ac_gerente{
+    -fx-background-image: url(../gerente/images/fondo.jpg);
+    -fx-background-size: cover;
+}
+
+#pn_general{
+    -fx-background-color: linear-gradient(rgba(105,105,105,0.4) 0%, rgba(0,0,0,0.4) 100%);
+}
+
+#pn_titulo{
+    -fx-background-image: url(../gerente/images/cabecera.png);
+}
+
+#bt_home{
+    -fx-background-image: url(../gerente/images/inicio2.png);
+    -fx-background-size: cover;
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;
+
+}
+
+#bt_perfil, #bt_ayuda{
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;    
+}
+
+#bt_perfil:hover, #bt_ayuda:hover, #bt_cerrarSesion:hover, #bt_home:hover{
+    -fx-background-color: rgba(0, 0, 0, 0.3);
+}
+
+#bt_perfil:pressed, #bt_ayuda:pressed, #bt_cerrarSesion:pressed, #bt_home:pressed{
+    -fx-border-color: orange;
+}
+
+#bt_cerrarSesion{
+    -fx-background-image: url(../gerente/images/logOut.png);
+    -fx-background-size: cover;
+    -fx-border-color: transparent;
+    -fx-background-color: transparent;    
+}
+
+#bt_productos, #bt_incidencias, #bt_conIncidendias, #bt_tienda, #bt_personal, #bt_contratarPersonal, 
+#bt_despedirPersonal, #bt_atras, #bt_contratar, #bt_despedir, #bt_buscar, #bt_irVerTrabajadores,
+#bt_irPanelAnadirProducto, #bt_limpiarProductos{
+    -fx-background-insets:0;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.5) , 0, 0 , 5, 5);
+    -fx-background-size: cover;
+}
+
+#bt_productos{
+    -fx-background-image: url(../gerente/images/productos.jpg);    
+}
+
+#bt_incidencias{
+    -fx-background-image: url(../gerente/images/incidencias.jpg);  
+    -fx-background-color: transparent;
+}
+
+#bt_conIncidendias{
+    -fx-background-image: url(../gerente/images/conIncidencias.png);    
+}
+
+#lb_numIncidencias{
+    -fx-background-color: #f9ac25;
+    -fx-border-color:black;
+    -fx-border-radius: 80px;
+    -fx-border-width: 1px;
+    -fx-background-radius: 90px;
+}
+
+#bt_tienda{
+    -fx-background-image: url(../gerente/images/tiendas.jpg);    
+}
+
+#bt_personal{
+    -fx-background-image: url(../gerente/images/trabajador.jpg);
+}
+
+#bt_contratarPersonal{
+    -fx-background-image: url(../gerente/images/trabajadorMas.jpg);
+}
+
+#bt_despedirPersonal{
+    -fx-background-image: url(../gerente/images/trabajadorMenos.jpg);
+}
+
+#bt_atras{
+    -fx-background-image: url(../gerente/images/atras.jpg);
+}
+
+#bt_contratar{
+    -fx-background-image: url(../gerente/images/contratarMas.jpg);
+}
+
+#bt_despedir{
+    -fx-background-image: url(../gerente/images/contratarMenos.jpg);
+}
+
+#bt_buscar{
+    -fx-background-image: url(../gerente/images/perfilBuscar.jpg);
+}
+
+#bt_irVerTrabajadores{
+    -fx-background-image: url(../gerente/images/trabajadores.jpg);
+}
+
+#bt_irPanelAnadirProducto{
+    -fx-background-image: url(../gerente/images/anadirProductos.jpg);
+}
+
+#bt_limpiarProductos{
+    -fx-background-image: url(../gerente/images/limpiar.jpg);
+}
+
+#bt_productos:pressed, #bt_incidencias:pressed, #bt_conIncidendias:pressed, #bt_tienda:pressed, 
+#bt_personal:pressed, #bt_contratarPersonal:pressed, #bt_despedirPersonal:pressed,
+#bt_atras:pressed , #bt_contratar:pressed, #bt_despedir:pressed, #bt_buscar:pressed, #bt_irVerTrabajadores:pressed,
+#bt_irPanelAnadirProducto:pressed, #bt_limpiarProductos:pressed{
+    -fx-translate-x: 5;
+    -fx-translate-y: 5;
+    -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.5) , 0, 0 , 0, 0);
+}
+
+#bt_productos:hover, #bt_incidencias:hover, #bt_conIncidendias:hover, #bt_tienda:hover, 
+#bt_personal:hover, #bt_contratarPersonal:hover, #bt_despedirPersonal:hover,
+#bt_atras:hover, #bt_contratar:hover, #bt_despedir:hover, #bt_buscar:hover, #bt_irVerTrabajadores:hover,
+#bt_irPanelAnadirProducto:hover, #bt_limpiarProductos:hover{
+    -fx-border-color: orange;
+}
+
+#tf_id, #tf_nombre, #tf_apellido1, #tf_apellido2, #tf_dni, #tf_puesto, 
+#tf_fecha, #nf_salario, #tf_nick, #tf_pass, #tf_tienda, #tf_horaEntrada,
+#tf_horaSalida,
+#tf_idDespedir, #tf_nombreDespedir, #tf_apellido1Despedir, #tf_apellido2Despedir, 
+#tf_dniDespedir, #tf_nombreProducto, #tf_precioCompraProducto, #tf_precioVentaProducto, #tf_ivaProducto,
+#nf_cantidad{
+    -fx-background-color: #cccccc;
+    -fx-text-fill: black;
+    -fx-border-radius: 2px;
+    -fx-prompt-text-fill: #8e8c88;
+}
+
+#tf_id, #tf_nombre, #tf_dni, #tf_puesto,#nf_salario, #tf_nick, #tf_pass, #tf_tienda, #tf_horaEntrada,
+#tf_horaSalida, #tf_nombreProducto, #tf_precioCompraProducto, #tf_precioVentaProducto, tf_ivaProducto{
+    -fx-prompt-text-fill: #eba037;
+}
+
+#lb_id{
+    -fx-background-color: #cccccc;
+    -fx-text-fill: #eba037;
+    -fx-border-radius: 2px;
+}
+
+.fondoTimePiker{
+    -fx-background-color: #cccccc;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 4px;
+}
+
+
+/* -------------- TableView --------------- */
+
+.root{
+    -fx-background-color: #262626;
+}
+
+.table-view{
+   -fx-background-color: transparent;
+}
+
+.table-view:focused{
+    -fx-background-color: transparent;
+}
+
+/* Spaltenköpfe
+    Struktur column-header-background -> column-header */
+
+.table-view .column-header-background{
+    -fx-background-color: linear-gradient(#131313 0%, #424141 100%);
+}
+
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+.table-view .table-cell{
+    -fx-text-fill: white;
+}
+
+.table-row-cell{
+    -fx-background-color: -fx-table-cell-border-color, #616161;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */
+}
+
+.table-row-cell:odd{
+    -fx-background-color: -fx-table-cell-border-color, #424242;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */  
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #005797;
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+}
+
+.table-view > .virtual-flow > .scroll-bar:vertical,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track,
+.table-view > .virtual-flow > .scroll-bar:vertical > .track-background, 
+.table-view > .virtual-flow > .scroll-bar:horizontal,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track,
+.table-view > .virtual-flow > .scroll-bar:horizontal > .track-background {
+    -fx-background-color: transparent;
+}
+
+
+
+.table-view > .virtual-flow > .scroll-bar > .increment-button, 
+.table-view > .virtual-flow > .scroll-bar > .decrement-button {
+    -fx-opacity: 0;
+}
+
+/* ------------- TEXT AREA -------------- */
+
+.text-area {
+    -fx-font-family: Open Sans;
+    -fx-font-size: 15;
+    -fx-text-fill: white;
+    -fx-display-caret:true;
+}
+
+.text-area .content {
+    -fx-background-color: #1a1a1a;
+}

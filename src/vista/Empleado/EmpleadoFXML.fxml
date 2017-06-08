@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="ac_Empleado" fx:id="ac_empleado" prefHeight="576.0" prefWidth="1024.0" stylesheets="@empleado.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vista.Empleado.EmpleadoController">
+   <children>
+      <Pane id="pn_FondoEmpleado" layoutX="148.0" prefHeight="578.0" prefWidth="740.0" stylesheets="@empleado.css">
+         <children>
+            <Pane id="pn_CabeceraEmpleado" fx:id="pn_titulo" layoutX="-21.0" layoutY="30.0" prefHeight="93.0" prefWidth="790.0" stylesheets="@empleado.css">
+               <children>
+                  <Button id="bt_Inicio" fx:id="bt_Inicio" layoutX="27.0" mnemonicParsing="false" onAction="#inicioAction" prefHeight="72.0" prefWidth="141.0" stylesheets="@empleado.css">
+                      <font>
+                        <Font name="Arial" size="21.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="bt_Perfil" alignment="CENTER" contentDisplay="CENTER" layoutX="339.0" mnemonicParsing="false" onAction="#perfilAction" prefHeight="72.0" prefWidth="236.0" stylesheets="@empleado.css" text="Perfil" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" /> 
+                     </cursor></Button>
+                  <Button fx:id="bt_Ayuda" layoutX="573.0" mnemonicParsing="false" onAction="#manualAction" prefHeight="72.0" prefWidth="100.0" stylesheets="@empleado.css" text="Ayuda" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button id="bt_LogOut" fx:id="bt_LogOut" layoutX="673.0" mnemonicParsing="false" onAction="#CloseAction" prefHeight="72.0" prefWidth="90.0" stylesheets="@empleado.css">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+               </children>
+            </Pane>
+            <Pane id="pn_FondoIconos" fx:id="pn_fondoIconos" layoutY="114.0" prefHeight="464.0" prefWidth="744.0" stylesheets="@empleado.css">
+               <children>
+                  <Button fx:id="bt_ventas" layoutX="317.0" layoutY="177.0" mnemonicParsing="false" onAction="#ventasAction" prefHeight="110.0" prefWidth="111.0" stylesheets="@empleado.css">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button fx:id="bt_productos" layoutX="66.0" layoutY="177.0" mnemonicParsing="false" onAction="#productosAction" prefHeight="110.0" prefWidth="111.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button id="bt_incidencias" fx:id="bt_incidencias" layoutX="577.0" layoutY="177.0" mnemonicParsing="false" onAction="#IncidenciasAction" prefHeight="110.0" prefWidth="111.0" stylesheets="@../gerente/gerente.css">
+                     <cursor>
+                       <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+               </children>
+            </Pane>
+            <Pane id="pn_FondoIconos" fx:id="pn_incidencias" layoutX="10.0" layoutY="124.0" prefHeight="464.0" prefWidth="744.0" stylesheets="@empleado.css">
+               <children>
+                  <Button fx:id="bt_anadirIncidencia" layoutX="32.0" layoutY="324.0" minHeight="111.0" mnemonicParsing="false" onAction="#añadirIncidenciaAction" prefWidth="110.0" stylesheets="@empleado.css">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button id="bt_atras" fx:id="bt_atrasIncidencias" layoutX="614.0" layoutY="370.0" mnemonicParsing="false" onAction="#IncidenciasAction" prefHeight="65.0" prefWidth="65.0" stylesheets="@../gerente/gerente.css">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Button>
+                  <ComboBox fx:id="cb_tipoIncidencia" layoutX="99.0" layoutY="71.0" onAction="#añadirIncidenciaAction" prefWidth="150.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </ComboBox>
+                  <TextArea fx:id="ta_descripcionIncidencia" layoutX="99.0" layoutY="107.0" prefHeight="148.0" prefWidth="547.0" promptText="Descripcion..." />
+                  <DatePicker fx:id="dp_fechaInciendia" layoutX="263.0" layoutY="71.0" />
+                  <TextField fx:id="tf_especificarTipoIncidencia" layoutX="100.0" layoutY="107.0" promptText="Especificar tipo" />
+               </children>
+            </Pane>
+            <Pane fx:id="pn_productos" layoutY="114.0" prefHeight="464.0" prefWidth="744.0">
+               <children>
+                  <TableView fx:id="tv_productos" layoutX="9.0" layoutY="28.0" prefHeight="291.0" prefWidth="719.0">
+                     <columns>
+                        <TableColumn fx:id="tb_referencia" prefWidth="64.0" text="referencia" />
+                        <TableColumn fx:id="tb_nombre" prefWidth="82.0" text="nombre" />
+                        <TableColumn fx:id="tb_categoria" prefWidth="121.0" text="categoría" />
+                        <TableColumn fx:id="tb_descripcion" prefWidth="161.0" text="descripción" />
+                        <TableColumn fx:id="tb_precioCompra" prefWidth="93.0" text="precio compra" />
+                        <TableColumn fx:id="tb_precioVenta" prefWidth="95.0" text="precio venta" />
+                        <TableColumn fx:id="tb_iva" minWidth="0.0" prefWidth="36.0" text="IVA" />
+                        <TableColumn fx:id="tb_stock" prefWidth="66.0" text="stock" />
+                     </columns>
+                  </TableView>
+                  <Button id="bt_atras" fx:id="bt_atrasProductos" layoutX="623.0" layoutY="379.0" mnemonicParsing="false" onAction="#productosAction" prefHeight="65.0" prefWidth="65.0" stylesheets="@../gerente/gerente.css">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+               </children>
+            </Pane>
+            <Pane fx:id="pn_ventas" layoutY="114.0" prefHeight="464.0" prefWidth="744.0">
+               <children>
+                  <TableView fx:id="tv_productosVenta" layoutY="20.0" onMouseClicked="#añadirProductoAction" prefHeight="281.0" prefWidth="409.0">
+                     <columns>
+                        <TableColumn fx:id="tb_nombreVenta" prefWidth="127.0" text="nombre" />
+                        <TableColumn fx:id="tb_categoriaVenta" prefWidth="113.0" text="categoría" />
+                        <TableColumn fx:id="tb_precioVentaVenta" prefWidth="85.0" text="precio venta" />
+                        <TableColumn fx:id="tb_stockVenta" prefWidth="81.0" text="stock" />
+                     </columns>
+                     <cursor>
+                        <Cursor fx:constant="DEFAULT" />
+                     </cursor>
+                  </TableView>
+                  <Button fx:id="bt_regVenta" layoutX="42.0" layoutY="334.0" mnemonicParsing="false" onAction="#generarVentaAction" prefHeight="110.0" prefWidth="111.0" stylesheets="@empleado.css">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Button id="bt_atras" fx:id="bt_atrasVentas" layoutX="623.0" layoutY="379.0" mnemonicParsing="false" onAction="#ventasAction" prefHeight="65.0" prefWidth="65.0" stylesheets="@../gerente/gerente.css">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor></Button>
+                  <Label fx:id="lb_total" layoutX="547.0" layoutY="281.0" text="TOTAL:" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font></Label>
+                  <Label fx:id="lb_TotalTicket" layoutX="616.0" layoutY="281.0" prefHeight="17.0" prefWidth="90.0" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font></Label>
+                  <ListView fx:id="lv_detalleVentas" layoutX="449.0" layoutY="40.0" prefHeight="221.0" prefWidth="257.0" stylesheets="@empleado.css" />
+               </children>
+            </Pane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

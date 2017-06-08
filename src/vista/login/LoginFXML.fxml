@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="pantallaLogin" fx:id="paneLogin" prefHeight="576.0" prefWidth="1024.0" stylesheets="@css.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vista.login.LoginController">
+    <children>
+        <Pane id="paneLogin" fx:id="pn_inciarSesion" layoutX="338.0" layoutY="107.0" prefHeight="363.0" prefWidth="348.0" stylesheets="@css.css">
+            <cursor>
+            </cursor>
+            <children>
+                <TextField id="textos" fx:id="tf_user" layoutX="21.0" layoutY="113.0" onKeyReleased="#conectarAction" prefHeight="42.0" prefWidth="306.0" promptText="Usuario" stylesheets="@css.css">
+                    <font>
+                        <Font size="16.0" />
+                    </font>
+                </TextField>
+            <PasswordField id="textos" fx:id="pf_contraseña" layoutX="21.0" layoutY="164.0" onKeyReleased="#conectarAction" prefHeight="42.0" prefWidth="306.0" promptText="Contraseña" stylesheets="@css.css">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </PasswordField>
+                <Label fx:id="lbl_inciarSesion" layoutX="89.0" layoutY="18.0" text="Iniciar sesión" textFill="WHITE">
+                    <font>
+                        <Font size="30.0" />
+                    </font>
+                </Label>
+                <Label fx:id="lbl_bienvendio" layoutX="89.0" layoutY="297.0" text="¡Bienvenido a JustComerce!" textFill="WHITE">
+                    <font>
+                        <Font size="14.0" />
+                    </font>
+                </Label>
+                <Separator id="barraLogin" fx:id="separator" layoutX="13.0" layoutY="62.0" prefHeight="0.0" prefWidth="323.0" stylesheets="@css.css" />
+            <Button id="btIniciarSesion" fx:id="bt_iniciarSesion" layoutX="23.0" layoutY="244.0" mnemonicParsing="false" onAction="#inciarSesionAction" onKeyReleased="#conectarAction" prefHeight="36.0" prefWidth="306.0" stylesheets="@css.css" text="Iniciar sesión" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Label fx:id="lb_errorIniciar" alignment="CENTER" contentDisplay="CENTER" layoutX="54.0" layoutY="217.0" prefHeight="20.0" prefWidth="245.0" textAlignment="CENTER" textFill="#eb0c0c" visible="false">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            </children>
+        </Pane>
+      <ImageView fx:id="iv_bloqMayus" fitHeight="71.0" fitWidth="253.0" layoutX="638.0" layoutY="253.0" pickOnBounds="true" preserveRatio="true" />
+      <Pane fx:id="pn_Bienvenida" layoutX="338.0" layoutY="107.0" prefHeight="363.0" prefWidth="348.0" stylesheets="@css.css">
+         <children>
+            <Label layoutX="32.0" layoutY="114.0" text="¡Bienvenido a JustComerce" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="lb_user" layoutX="137.0" layoutY="149.0" text="lb_user" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="138.0" layoutY="324.0" text="Alwais fair" textFill="WHITE">
+               <font>
+                  <Font size="16.0" />
+               </font></Label>
+         </children></Pane>
+        <Pane id="paneFondo" fx:id="pn_principalBienvenida" layoutY="1.0" prefHeight="576.0" prefWidth="1024.0" stylesheets="@css.css" />
+    </children>
+    <cursor>
+    </cursor>
+</AnchorPane>
